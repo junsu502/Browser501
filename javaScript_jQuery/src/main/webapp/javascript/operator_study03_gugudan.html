@@ -5,8 +5,32 @@
 <title>Insert title here</title>
 </head>
 <body>
-1. 구구단 작성하기(2~9)
+1. 구구단 작성하기(2~9)<br>
+<script>
+for(var i=2; i<=9; i++){
+	for(var j=1; j<=9; j++){
+		document.write(i+"*"+j+"="+i*j+"<br>")
+	}
+}
+</script>
 <hr>
-2. 5단 만 출력
+2. 5단 만 출력<br>
+<p id="demo"></p>
+<script>
+var fn = prompt("몇단을 구해볼까요?","0");
+for(var i=1; i<=9; i++){
+	document.write(fn+"*"+i+"="+fn*i+"<br>")
+}
+var x =gugudan(fn);
+
+document.getElementById("demo").innerHTML = x;
+function gugudan(fn){
+	for(var i=1; i<=9; i++){
+	 return(fn+"*"+i+"="+fn*i+"<br>")
+	}
+}
+
+
+</script>
 </body>
 </html>
