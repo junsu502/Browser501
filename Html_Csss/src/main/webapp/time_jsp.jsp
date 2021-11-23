@@ -15,7 +15,7 @@ JSP(MVC Model): Client의 요청을 서블릿이 받아서 처리한 후 JSP를 
 				html문서로 전달<br><hr>
 <%
 Calendar c = Calendar.getInstance();
-int date = c.DATE;
+int date;
 int hour = c.get(Calendar.HOUR_OF_DAY);
 int minute = c.get(Calendar.MINUTE);
 int second = c.get(Calendar.SECOND);

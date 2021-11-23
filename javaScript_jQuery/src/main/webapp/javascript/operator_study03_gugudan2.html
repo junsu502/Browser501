@@ -8,11 +8,29 @@
 1. 구구단 작성하기(2~9)<br>
 <script>
 for(var i=2; i<=9; i++){
+	document.write("<h3>"+i+"&nbsp;단<h3>")
 	for(var j=1; j<=9; j++){
 		document.write(i+"*"+j+"="+i*j+"<br>")
 	}
 }
 </script>
+<hr>1.0 테이블<br>
+<script>
+    var num=1
+    var t="<table  border='2'>";
+	for(var i=2; i<=9; i++){
+		for(var k=1; k<=9; k++){
+			t += "<td>"+i*k+"</td>";
+			num++;
+		}
+		t += "</tr>";
+	}
+	
+	t += "</table>";
+	console.log(t);
+	document.write(t);
+</script>
+
 <hr>
 2. 5단 만 출력<br>
 <p id="demo"></p>
@@ -29,6 +47,7 @@ function gugudan(fn){
 	 return(fn+"*"+i+"="+fn*i+"<br>")
 	}
 }
+
 
 </script>
 </body>
