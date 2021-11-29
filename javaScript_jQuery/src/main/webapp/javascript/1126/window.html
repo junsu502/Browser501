@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window</title>
+</head>
+<body>
+<h1>영화 소개</h1>
+<button onclick="windowopen()">팝업 열기</button>
+<button onclick="resizeto()">팝업 사이즈 작게</button>
+
+
+<script>
+var ow;
+function windowopen(){
+ow = window.open("movieintro.html","영화포스터","width=600,height=500");
+}
+function resizeto(){
+ow.resizeTo(300,371);
+ow.focus();
+}
+
+</script>
+
+</body>
+</html>
